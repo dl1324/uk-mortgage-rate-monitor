@@ -2,11 +2,24 @@ name: UK Mortgage Outlook & Decision Monitor
 
 on:
   schedule:
-    - cron: "37 8,18 * * 1-5"
+    # Primary checks at off-peak minutes, using UK local time.
+    - cron: "17 8 * * 1-5"
       timezone: "Europe/London"
+    - cron: "17 18 * * 1-5"
+      timezone: "Europe/London"
+
+    # Backup opportunities one hour later. These only perform the full
+    # check if a successful run has not updated state.json recently.
+    - cron: "17 9 * * 1-5"
+      timezone: "Europe/London"
+    - cron: "17 19 * * 1-5"
+      timezone: "Europe/London"
+
   push:
     paths:
       - ".mortgage-monitor-test-trigger"
+      - ".github/workflows/mortgage-monitor.yml"
+
   workflow_dispatch:
     inputs:
       send_test_email:
@@ -30,19 +43,65 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Decide whether market check is needed
+        id: freshness
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          should_run = True
+          reason = "non-scheduled run"
+
+          if os.environ.get("EVENT_NAME") == "schedule":
+              try:
+                  state = json.loads(Path("state.json").read_text(encoding="utf-8"))
+                  raw = str(state.get("last_checked") or "").strip()
+                  if raw:
+                      checked = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+                      if checked.tzinfo is None:
+                          checked = checked.replace(tzinfo=timezone.utc)
+                      age_minutes = (datetime.now(timezone.utc) - checked.astimezone(timezone.utc)).total_seconds() / 60
+                      if 0 <= age_minutes < 90:
+                          should_run = False
+                          reason = f"state updated {age_minutes:.1f} minutes ago"
+                      else:
+                          reason = f"state is {age_minutes:.1f} minutes old"
+                  else:
+                      reason = "state has no last_checked timestamp"
+              except Exception as exc:
+                  reason = f"freshness check failed safely: {exc}"
+
+          print(f"Run full mortgage check: {should_run} ({reason})")
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+              f.write(f"run={'true' if should_run else 'false'}\n")
+          PY
+
+      - name: Skip duplicate backup run
+        if: steps.freshness.outputs.run != 'true'
+        run: echo "A recent mortgage check already completed; backup run not required."
+
       - name: Set up Python
+        if: steps.freshness.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: "pip"
 
       - name: Install dependencies
+        if: steps.freshness.outputs.run == 'true'
         run: pip install -r requirements.txt
 
       - name: Validate Python
+        if: steps.freshness.outputs.run == 'true'
         run: python -m py_compile monitor_v3.py monitor_v4.py monitor_v4_entrypoint.py
 
       - name: Check market, compare strategies and update outlook
+        if: steps.freshness.outputs.run == 'true'
         env:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
@@ -51,6 +110,7 @@ jobs:
         run: python monitor_v4_entrypoint.py
 
       - name: Save monitor state
+        if: steps.freshness.outputs.run == 'true'
         run: |
           if git diff --quiet -- state.json; then
             echo "No state change to save."
