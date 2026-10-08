@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-10-07T22:03:45.960545+00:00",
+  "last_checked": "2026-10-08T14:35:23.351939+00:00",
   "model_version": 4,
   "latest_values": {
     "headline_cpi": {
@@ -29,32 +29,32 @@
     },
     "bank_rate": {
       "value": 3.75,
-      "period": "2026-10-07",
+      "period": "2026-10-08",
       "source": "Bank of England"
     },
     "swap_2y": {
-      "value": 4.56,
+      "value": 4.58,
       "period": "previous UK business-day close",
       "source": "BlueGamma public SONIA swap table"
     },
     "swap_5y": {
-      "value": 4.72,
+      "value": 4.76,
       "period": "previous UK business-day close",
       "source": "BlueGamma public SONIA swap table"
     },
     "gilt_2y": {
-      "value": 4.612482282704806,
-      "period": "2026-10-06",
+      "value": 4.63417292644411,
+      "period": "2026-10-07",
       "source": "Bank of England nominal gilt spot curve"
     },
     "gilt_5y": {
-      "value": 4.896350456854282,
-      "period": "2026-10-06",
+      "value": 4.949892527485398,
+      "period": "2026-10-07",
       "source": "Bank of England nominal gilt spot curve"
     },
     "gilt_10y": {
-      "value": 5.367668852434683,
-      "period": "2026-10-06",
+      "value": 5.441170662279398,
+      "period": "2026-10-07",
       "source": "Bank of England nominal gilt spot curve"
     }
   },
@@ -77,20 +77,20 @@
         "5y": 5.54
       }
     },
-    "period": "October 7, 2026",
+    "period": "October 8, 2026",
     "source": "Rightmove / Podium average home-buyer rates"
   },
   "decision_products": {
     "fixed_2y": {
-      "lender": "RECOMMENDED PROVIDER Nationwide Building Society",
-      "rate": 5.04,
-      "fee": 1499.0,
+      "lender": "Yorkshire Building Society",
+      "rate": 4.96,
+      "fee": 1495.0,
       "source": "Which? / Moneyfacts daily remortgage table"
     },
     "fixed_5y": {
-      "lender": "RECOMMENDED PROVIDER Nationwide Building Society",
-      "rate": 5.06,
-      "fee": 1499.0,
+      "lender": "Yorkshire Building Society",
+      "rate": 5.05,
+      "fee": 1495.0,
       "source": "Which? / Moneyfacts daily remortgage table"
     },
     "tracker_cheapest": {
@@ -102,9 +102,9 @@
     "period": "updated daily",
     "source": "Which? tables using Moneyfacts data",
     "fixed_3y": {
-      "lender": "Santander",
-      "rate": 5.07,
-      "fee": 999.0,
+      "lender": "Yorkshire Building Society",
+      "rate": 5.05,
+      "fee": 1495.0,
       "source": "Which? / Moneyfacts daily remortgage table"
     },
     "fixed_10y": {
@@ -138,231 +138,231 @@
   "latest_pressure_index": -0.1071,
   "latest_forecast": {
     "6 months": {
-      "mortgage_2y_mid": 5.08,
+      "mortgage_2y_mid": 5.1,
       "mortgage_2y_range": [
-        4.78,
-        5.38
+        4.8,
+        5.4
       ],
-      "mortgage_5y_mid": 5.12,
+      "mortgage_5y_mid": 5.15,
       "mortgage_5y_range": [
-        4.82,
-        5.42
+        4.85,
+        5.45
       ]
     },
     "12 months": {
-      "mortgage_2y_mid": 4.74,
+      "mortgage_2y_mid": 4.75,
       "mortgage_2y_range": [
-        4.39,
-        5.09
+        4.4,
+        5.1
       ],
-      "mortgage_5y_mid": 4.82,
+      "mortgage_5y_mid": 4.85,
       "mortgage_5y_range": [
-        4.47,
-        5.17
+        4.5,
+        5.2
       ]
     },
     "2 years": {
-      "mortgage_2y_mid": 4.3,
+      "mortgage_2y_mid": 4.31,
       "mortgage_2y_range": [
-        3.85,
-        4.75
+        3.86,
+        4.76
       ],
-      "mortgage_5y_mid": 4.44,
+      "mortgage_5y_mid": 4.46,
       "mortgage_5y_range": [
-        3.99,
-        4.89
+        4.01,
+        4.91
       ]
     }
   },
   "latest_bank_rate_forecast": {
-    "6 months": 4.03,
-    "12 months": 3.94,
-    "2 years": 3.6
+    "6 months": 4.04,
+    "12 months": 3.95,
+    "2 years": 3.61
   },
   "latest_tactical_view": {
     "strategies": [
       {
         "name": "5Y fix now",
-        "lower_cost": 49399.0,
-        "base_cost": 49399.0,
-        "higher_cost": 49399.0,
+        "lower_cost": 49297.0,
+        "base_cost": 49297.0,
+        "higher_cost": 49297.0,
         "stress_range": 0.0,
-        "difference_vs_base_lowest": 9603.0
+        "difference_vs_base_lowest": 9408.0
       },
       {
         "name": "3Y fix now \u2192 refinance",
-        "lower_cost": 44548.0,
-        "base_cost": 47311.0,
-        "higher_cost": 51012.0,
-        "stress_range": 6464.0,
-        "difference_vs_base_lowest": 7515.0
+        "lower_cost": 44666.0,
+        "base_cost": 47427.0,
+        "higher_cost": 51126.0,
+        "stress_range": 6460.0,
+        "difference_vs_base_lowest": 7538.0
       },
       {
         "name": "2Y fix now \u2192 refinance",
-        "lower_cost": 42067.0,
-        "base_cost": 46285.0,
-        "higher_cost": 51947.0,
-        "stress_range": 9880.0,
-        "difference_vs_base_lowest": 6489.0
+        "lower_cost": 41456.0,
+        "base_cost": 45669.0,
+        "higher_cost": 51327.0,
+        "stress_range": 9871.0,
+        "difference_vs_base_lowest": 5780.0
       },
       {
         "name": "Tracker 3m \u2192 2Y fix",
-        "lower_cost": 40163.0,
-        "base_cost": 47187.0,
-        "higher_cost": 56646.0,
-        "stress_range": 16483.0,
-        "difference_vs_base_lowest": 7391.0
+        "lower_cost": 39626.0,
+        "base_cost": 46646.0,
+        "higher_cost": 56100.0,
+        "stress_range": 16474.0,
+        "difference_vs_base_lowest": 6757.0
       },
       {
         "name": "Tracker 3m \u2192 3Y fix",
-        "lower_cost": 41344.0,
-        "base_cost": 48380.0,
-        "higher_cost": 57852.0,
-        "stress_range": 16508.0,
-        "difference_vs_base_lowest": 8584.0
+        "lower_cost": 40824.0,
+        "base_cost": 47855.0,
+        "higher_cost": 57322.0,
+        "stress_range": 16498.0,
+        "difference_vs_base_lowest": 7966.0
       },
       {
         "name": "Tracker 3m \u2192 5Y fix",
-        "lower_cost": 43006.0,
-        "base_cost": 50076.0,
-        "higher_cost": 59588.0,
-        "stress_range": 16582.0,
-        "difference_vs_base_lowest": 10280.0
+        "lower_cost": 43100.0,
+        "base_cost": 50170.0,
+        "higher_cost": 59684.0,
+        "stress_range": 16584.0,
+        "difference_vs_base_lowest": 10281.0
       },
       {
         "name": "Tracker 6m \u2192 2Y fix",
-        "lower_cost": 40155.0,
-        "base_cost": 47114.0,
-        "higher_cost": 56485.0,
-        "stress_range": 16330.0,
-        "difference_vs_base_lowest": 7318.0
+        "lower_cost": 39689.0,
+        "base_cost": 46644.0,
+        "higher_cost": 56011.0,
+        "stress_range": 16322.0,
+        "difference_vs_base_lowest": 6755.0
       },
       {
         "name": "Tracker 6m \u2192 3Y fix",
-        "lower_cost": 41407.0,
-        "base_cost": 48379.0,
-        "higher_cost": 57764.0,
-        "stress_range": 16357.0,
-        "difference_vs_base_lowest": 8583.0
+        "lower_cost": 40987.0,
+        "base_cost": 47954.0,
+        "higher_cost": 57335.0,
+        "stress_range": 16348.0,
+        "difference_vs_base_lowest": 8065.0
       },
       {
         "name": "Tracker 6m \u2192 5Y fix",
-        "lower_cost": 42808.0,
-        "base_cost": 49810.0,
-        "higher_cost": 59232.0,
-        "stress_range": 16424.0,
-        "difference_vs_base_lowest": 10014.0
+        "lower_cost": 42987.0,
+        "base_cost": 49991.0,
+        "higher_cost": 59415.0,
+        "stress_range": 16428.0,
+        "difference_vs_base_lowest": 10102.0
       },
       {
         "name": "Tracker 12m \u2192 2Y fix",
-        "lower_cost": 38719.0,
-        "base_cost": 45667.0,
-        "higher_cost": 55027.0,
-        "stress_range": 16308.0,
-        "difference_vs_base_lowest": 5871.0
+        "lower_cost": 38205.0,
+        "base_cost": 45149.0,
+        "higher_cost": 54502.0,
+        "stress_range": 16297.0,
+        "difference_vs_base_lowest": 5260.0
       },
       {
         "name": "Tracker 12m \u2192 3Y fix",
-        "lower_cost": 39652.0,
-        "base_cost": 46611.0,
-        "higher_cost": 55982.0,
-        "stress_range": 16330.0,
-        "difference_vs_base_lowest": 6815.0
+        "lower_cost": 39254.0,
+        "base_cost": 46208.0,
+        "higher_cost": 55575.0,
+        "stress_range": 16321.0,
+        "difference_vs_base_lowest": 6319.0
       },
       {
         "name": "Tracker 12m \u2192 5Y fix",
-        "lower_cost": 39812.0,
-        "base_cost": 46788.0,
-        "higher_cost": 56181.0,
-        "stress_range": 16369.0,
-        "difference_vs_base_lowest": 6992.0
+        "lower_cost": 39981.0,
+        "base_cost": 46958.0,
+        "higher_cost": 56353.0,
+        "stress_range": 16372.0,
+        "difference_vs_base_lowest": 7069.0
       },
       {
         "name": "Tracker throughout 5Y",
-        "lower_cost": 32875.0,
-        "base_cost": 39796.0,
-        "higher_cost": 49124.0,
-        "stress_range": 16249.0,
+        "lower_cost": 32967.0,
+        "base_cost": 39889.0,
+        "higher_cost": 49218.0,
+        "stress_range": 16251.0,
         "difference_vs_base_lowest": 0.0
       },
       {
-        "name": "Tracker until 5Y \u2264 4.50% (model month 21)",
-        "lower_cost": 37259.0,
-        "base_cost": 44211.0,
-        "higher_cost": 53576.0,
-        "stress_range": 16317.0,
-        "difference_vs_base_lowest": 4415.0
+        "name": "Tracker until 5Y \u2264 4.50% (model month 22)",
+        "lower_cost": 37104.0,
+        "base_cost": 44055.0,
+        "higher_cost": 53418.0,
+        "stress_range": 16314.0,
+        "difference_vs_base_lowest": 4166.0
       }
     ],
-    "break_even_refi_rate_2v5": 4.81,
-    "model_refi_proxy_2y": 4.26,
+    "break_even_refi_rate_2v5": 4.85,
+    "model_refi_proxy_2y": 4.21,
     "wait_break_evens": [
       {
         "wait_months": 3,
         "fix_term": "2y",
-        "model_fix_rate": 5.02,
-        "break_even_fix_rate": 5.56,
-        "headroom_pp": 0.54
+        "model_fix_rate": 4.95,
+        "break_even_fix_rate": 5.6,
+        "headroom_pp": 0.65
       },
       {
         "wait_months": 3,
         "fix_term": "3y",
-        "model_fix_rate": 5.0,
-        "break_even_fix_rate": 5.17,
-        "headroom_pp": 0.17
+        "model_fix_rate": 4.95,
+        "break_even_fix_rate": 5.19,
+        "headroom_pp": 0.24
       },
       {
         "wait_months": 3,
-        "fix_term": "5y",
-        "model_fix_rate": 5.07,
-        "break_even_fix_rate": 5.0,
-        "headroom_pp": -0.07
-      },
-      {
-        "wait_months": 6,
-        "fix_term": "2y",
-        "model_fix_rate": 4.99,
-        "break_even_fix_rate": 5.55,
-        "headroom_pp": 0.56
-      },
-      {
-        "wait_months": 6,
-        "fix_term": "3y",
-        "model_fix_rate": 4.99,
-        "break_even_fix_rate": 5.16,
-        "headroom_pp": 0.17
-      },
-      {
-        "wait_months": 6,
         "fix_term": "5y",
         "model_fix_rate": 5.08,
-        "break_even_fix_rate": 5.03,
-        "headroom_pp": -0.05
+        "break_even_fix_rate": 4.99,
+        "headroom_pp": -0.09
+      },
+      {
+        "wait_months": 6,
+        "fix_term": "2y",
+        "model_fix_rate": 4.93,
+        "break_even_fix_rate": 5.58,
+        "headroom_pp": 0.65
+      },
+      {
+        "wait_months": 6,
+        "fix_term": "3y",
+        "model_fix_rate": 4.95,
+        "break_even_fix_rate": 5.17,
+        "headroom_pp": 0.22
+      },
+      {
+        "wait_months": 6,
+        "fix_term": "5y",
+        "model_fix_rate": 5.1,
+        "break_even_fix_rate": 5.02,
+        "headroom_pp": -0.08
       },
       {
         "wait_months": 12,
         "fix_term": "2y",
-        "model_fix_rate": 4.65,
-        "break_even_fix_rate": 5.59,
-        "headroom_pp": 0.94
+        "model_fix_rate": 4.58,
+        "break_even_fix_rate": 5.62,
+        "headroom_pp": 1.04
       },
       {
         "wait_months": 12,
         "fix_term": "3y",
-        "model_fix_rate": 4.67,
+        "model_fix_rate": 4.62,
         "break_even_fix_rate": 5.15,
-        "headroom_pp": 0.48
+        "headroom_pp": 0.53
       },
       {
         "wait_months": 12,
         "fix_term": "5y",
-        "model_fix_rate": 4.78,
-        "break_even_fix_rate": 5.12,
-        "headroom_pp": 0.34
+        "model_fix_rate": 4.8,
+        "break_even_fix_rate": 5.1,
+        "headroom_pp": 0.3
       }
     ],
     "trigger_target": 4.5,
-    "trigger_month": 21
+    "trigger_month": 22
   },
   "latest_ten_year_view": {
     "fixed_10y": {
@@ -372,17 +372,17 @@
       "source": "HomeOwners Alliance / MAB current remortgage table"
     },
     "fixed_5y": {
-      "lender": "RECOMMENDED PROVIDER Nationwide Building Society",
-      "rate": 5.06,
-      "fee": 1499.0,
+      "lender": "Yorkshire Building Society",
+      "rate": 5.05,
+      "fee": 1495.0,
       "source": "Which? / Moneyfacts daily remortgage table"
     },
     "cost_10y": 93370.0,
-    "cost_5plus5_lower": 79133.0,
-    "cost_5plus5_base": 87529.0,
-    "cost_5plus5_higher": 96045.0,
+    "cost_5plus5_lower": 79026.0,
+    "cost_5plus5_base": 87421.0,
+    "cost_5plus5_higher": 95936.0,
     "future_5y_proxy": 4.5,
-    "break_even_second_5y_rate": 5.19,
+    "break_even_second_5y_rate": 5.2,
     "note": "The year-5 mortgage rate is a long-horizon planning assumption, not a precise forecast."
   },
   "alert_anchor": {
