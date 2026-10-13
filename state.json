@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-10-13T15:03:30.732011+00:00",
+  "last_checked": "2026-10-13T18:41:40.251420+00:00",
   "model_version": 4,
   "latest_values": {
     "headline_cpi": {
@@ -770,5 +770,6 @@
       "note": "The year-5 mortgage rate is a long-horizon planning assumption, not a precise forecast."
     },
     "sent_at": "2026-10-01T21:43:10.483253+00:00"
-  }
+  },
+  "last_weekly_summary_week": null
 }
