@@ -8,11 +8,19 @@ on:
     - cron: "17 18 * * 1-5"
       timezone: "Europe/London"
 
+    # Weekly outlook: Sunday morning, even if no market-change trigger fires.
+    - cron: "17 9 * * 0"
+      timezone: "Europe/London"
+
     # Backup opportunities one hour later. These only perform the full
     # check if a successful run has not updated state.json recently.
     - cron: "17 9 * * 1-5"
       timezone: "Europe/London"
     - cron: "17 19 * * 1-5"
+      timezone: "Europe/London"
+
+    # Sunday backup, used only if the primary Sunday check did not complete.
+    - cron: "17 10 * * 0"
       timezone: "Europe/London"
 
   push:
@@ -107,6 +115,7 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
           TEST_EMAIL: ${{ github.event_name == 'workflow_dispatch' && inputs.send_test_email == true }}
+          WEEKLY_EMAIL: ${{ github.event_name == 'schedule' && (github.event.schedule == '17 9 * * 0' || github.event.schedule == '17 10 * * 0') }}
         run: python monitor_v4_entrypoint.py
 
       - name: Save monitor state
