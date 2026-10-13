@@ -116,12 +116,12 @@ Edit `decision_assumptions`, `scenario_shifts` and `long_horizon_assumptions` in
 
 ## Schedule
 
-Runs approximately:
+Runs approximately (GitHub Actions schedules may be delayed):
 
-- 08:37 UK time, Monday-Friday
-- 18:37 UK time, Monday-Friday
+- 08:17 and 18:17 UK time, Monday-Friday (09:17 and 19:17 backup checks)
+- 09:17 UK time every Sunday (10:17 backup check)
 
-Emails are triggered by material changes in swaps, gilts, mortgage products, forecasts, Bank Rate or macro trigger bands. A manual test can always be sent from GitHub Actions.
+Material-change emails still trigger when swaps, gilts, mortgage products, forecasts, Bank Rate or macro trigger bands move past configured thresholds. A **WEEKLY — UK Mortgage Outlook v4** summary is also emailed each Sunday even when no alert threshold is reached. The monitor records the ISO week of the last Sunday summary to prevent duplicates from backup runs. A manual test can always be sent from GitHub Actions.
 
 ## Files
 
