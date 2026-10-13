@@ -1,6 +1,7 @@
 import json
 import os
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 import monitor_v3 as base
 from bs4 import BeautifulSoup
@@ -523,8 +524,12 @@ def main():
 
     why = list(dict.fromkeys(why))
     test = os.environ.get("TEST_EMAIL", "").lower() in {"1", "true", "yes"}
+    weekly_requested = os.environ.get("WEEKLY_EMAIL", "").lower() in {"1", "true", "yes"}
+    iso_week = datetime.now(ZoneInfo("Europe/London")).isocalendar()
+    weekly_key = f"{iso_week.year}-W{iso_week.week:02d}"
+    weekly_due = weekly_requested and prev.get("last_weekly_summary_week") != weekly_key
     first = not prev.get("alert_anchor")
-    should_send = test or first or bool(why)
+    should_send = test or first or bool(why) or weekly_due
     now = datetime.now(timezone.utc).isoformat()
 
     state = {
@@ -541,18 +546,25 @@ def main():
         "latest_tactical_view": tactical,
         "latest_ten_year_view": long10,
         "alert_anchor": prev.get("alert_anchor"),
+        "last_weekly_summary_week": prev.get("last_weekly_summary_week"),
     }
 
     if should_send:
-        prefix = "TEST — " if test else ""
+        prefix = "TEST — " if test else "WEEKLY — " if weekly_due else ""
+        email_reasons = why or (
+            ["Scheduled weekly report: no material change has crossed an alert threshold."]
+            if weekly_due else ["Manual/test report"]
+        )
         subject = f"{prefix}UK Mortgage Outlook v4"
         base.send_email(
             subject,
             extended_email_html(
                 values, bands, mortgage_market, forecast, bank_fc, products,
-                flex, tactical, long10, why, pressure, cfg
+                flex, tactical, long10, email_reasons, pressure, cfg
             ),
         )
+        if weekly_due:
+            state["last_weekly_summary_week"] = weekly_key
         state["alert_anchor"] = {
             "values": values,
             "mortgage_market": mortgage_market,
