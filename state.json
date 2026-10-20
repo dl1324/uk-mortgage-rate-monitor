@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-10-20T12:43:26.119038+00:00",
+  "last_checked": "2026-10-20T20:40:37.277045+00:00",
   "model_version": 4,
   "latest_values": {
     "headline_cpi": {
@@ -102,7 +102,7 @@
     "period": "updated daily",
     "source": "Which? tables using Moneyfacts data",
     "fixed_3y": {
-      "lender": "RECOMMENDED PROVIDER Barclays",
+      "lender": "Santander",
       "rate": 5.07,
       "fee": 999.0,
       "source": "Which? / Moneyfacts daily remortgage table"
