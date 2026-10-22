@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-10-22T12:58:36.183101+00:00",
+  "last_checked": "2026-10-22T20:35:50.336554+00:00",
   "model_version": 4,
   "latest_values": {
     "headline_cpi": {
@@ -88,9 +88,9 @@
       "source": "Which? / Moneyfacts daily remortgage table"
     },
     "fixed_5y": {
-      "lender": "HSBC",
+      "lender": "RECOMMENDED PROVIDER Nationwide Building Society",
       "rate": 5.06,
-      "fee": 999.0,
+      "fee": 1499.0,
       "source": "Which? / Moneyfacts daily remortgage table"
     },
     "tracker_cheapest": {
@@ -183,11 +183,11 @@
     "strategies": [
       {
         "name": "5Y fix now",
-        "lower_cost": 48899.0,
-        "base_cost": 48899.0,
-        "higher_cost": 48899.0,
+        "lower_cost": 49399.0,
+        "base_cost": 49399.0,
+        "higher_cost": 49399.0,
         "stress_range": 0.0,
-        "difference_vs_base_lowest": 8721.0
+        "difference_vs_base_lowest": 9221.0
       },
       {
         "name": "3Y fix now \u2192 refinance",
@@ -294,71 +294,71 @@
         "difference_vs_base_lowest": 3981.0
       }
     ],
-    "break_even_refi_rate_2v5": 4.85,
+    "break_even_refi_rate_2v5": 4.94,
     "model_refi_proxy_2y": 4.35,
     "wait_break_evens": [
       {
         "wait_months": 3,
         "fix_term": "2y",
         "model_fix_rate": 5.02,
-        "break_even_fix_rate": 5.32,
-        "headroom_pp": 0.3
+        "break_even_fix_rate": 5.45,
+        "headroom_pp": 0.43
       },
       {
         "wait_months": 3,
         "fix_term": "3y",
         "model_fix_rate": 5.05,
-        "break_even_fix_rate": 5.06,
-        "headroom_pp": 0.01
+        "break_even_fix_rate": 5.15,
+        "headroom_pp": 0.1
       },
       {
         "wait_months": 3,
         "fix_term": "5y",
         "model_fix_rate": 5.1,
-        "break_even_fix_rate": 4.94,
-        "headroom_pp": -0.16
+        "break_even_fix_rate": 5.0,
+        "headroom_pp": -0.1
       },
       {
         "wait_months": 6,
         "fix_term": "2y",
         "model_fix_rate": 5.04,
-        "break_even_fix_rate": 5.32,
-        "headroom_pp": 0.28
+        "break_even_fix_rate": 5.44,
+        "headroom_pp": 0.4
       },
       {
         "wait_months": 6,
         "fix_term": "3y",
         "model_fix_rate": 5.09,
-        "break_even_fix_rate": 5.05,
-        "headroom_pp": -0.04
+        "break_even_fix_rate": 5.14,
+        "headroom_pp": 0.05
       },
       {
         "wait_months": 6,
         "fix_term": "5y",
         "model_fix_rate": 5.15,
-        "break_even_fix_rate": 4.97,
-        "headroom_pp": -0.18
+        "break_even_fix_rate": 5.03,
+        "headroom_pp": -0.12
       },
       {
         "wait_months": 12,
         "fix_term": "2y",
         "model_fix_rate": 4.69,
-        "break_even_fix_rate": 5.41,
-        "headroom_pp": 0.72
+        "break_even_fix_rate": 5.53,
+        "headroom_pp": 0.84
       },
       {
         "wait_months": 12,
         "fix_term": "3y",
         "model_fix_rate": 4.77,
-        "break_even_fix_rate": 5.03,
-        "headroom_pp": 0.26
+        "break_even_fix_rate": 5.12,
+        "headroom_pp": 0.35
       },
       {
         "wait_months": 12,
         "fix_term": "5y",
         "model_fix_rate": 4.86,
-        "break_even_fix_rate": 5.04,
-        "headroom_pp": 0.18
+        "break_even_fix_rate": 5.11,
+        "headroom_pp": 0.25
       }
     ],
     "trigger_target": 4.5,
@@ -372,17 +372,17 @@
       "source": "HomeOwners Alliance / MAB current remortgage table"
     },
     "fixed_5y": {
-      "lender": "HSBC",
+      "lender": "RECOMMENDED PROVIDER Nationwide Building Society",
       "rate": 5.06,
-      "fee": 999.0,
+      "fee": 1499.0,
       "source": "Which? / Moneyfacts daily remortgage table"
     },
     "cost_10y": 93370.0,
-    "cost_5plus5_lower": 78633.0,
-    "cost_5plus5_base": 87029.0,
-    "cost_5plus5_higher": 95545.0,
+    "cost_5plus5_lower": 79133.0,
+    "cost_5plus5_base": 87529.0,
+    "cost_5plus5_higher": 96045.0,
     "future_5y_proxy": 4.5,
-    "break_even_second_5y_rate": 5.25,
+    "break_even_second_5y_rate": 5.19,
     "note": "The year-5 mortgage rate is a long-horizon planning assumption, not a precise forecast."
   },
   "alert_anchor": {
