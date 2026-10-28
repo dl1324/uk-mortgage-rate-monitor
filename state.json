@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-10-27T22:22:47.217443+00:00",
+  "last_checked": "2026-10-28T15:06:21.391176+00:00",
   "model_version": 4,
   "latest_values": {
     "headline_cpi": {
@@ -29,7 +29,7 @@
     },
     "bank_rate": {
       "value": 3.75,
-      "period": "2026-10-27",
+      "period": "2026-10-28",
       "source": "Bank of England"
     },
     "swap_2y": {
@@ -43,18 +43,18 @@
       "source": "BlueGamma public SONIA swap table"
     },
     "gilt_2y": {
-      "value": 4.731624418295791,
-      "period": "2026-10-26",
+      "value": 4.73822964472537,
+      "period": "2026-10-27",
       "source": "Bank of England nominal gilt spot curve"
     },
     "gilt_5y": {
-      "value": 4.9614285593235214,
-      "period": "2026-10-26",
+      "value": 4.963671086747799,
+      "period": "2026-10-27",
       "source": "Bank of England nominal gilt spot curve"
     },
     "gilt_10y": {
-      "value": 5.325883657576589,
-      "period": "2026-10-26",
+      "value": 5.322254735088999,
+      "period": "2026-10-27",
       "source": "Bank of England nominal gilt spot curve"
     }
   },
@@ -65,8 +65,8 @@
         "5y": 5.07
       },
       "75": {
-        "2y": 5.41,
-        "5y": 5.37
+        "2y": 5.43,
+        "5y": 5.38
       },
       "90": {
         "2y": 5.33,
@@ -77,7 +77,7 @@
         "5y": 5.54
       }
     },
-    "period": "October 27, 2026",
+    "period": "October 28, 2026",
     "source": "Rightmove / Podium average home-buyer rates"
   },
   "decision_products": {
