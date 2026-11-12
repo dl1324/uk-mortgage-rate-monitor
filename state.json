@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-11-11T16:10:28.301354+00:00",
+  "last_checked": "2026-11-12T00:49:26.474426+00:00",
   "model_version": 4,
   "latest_values": {
     "headline_cpi": {
@@ -29,7 +29,7 @@
     },
     "bank_rate": {
       "value": 4.0,
-      "period": "2026-11-11",
+      "period": "2026-11-12",
       "source": "Bank of England"
     },
     "swap_2y": {
