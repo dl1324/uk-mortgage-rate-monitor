@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-11-24T19:30:07.944518+00:00",
+  "last_checked": "2026-11-25T02:34:32.690246+00:00",
   "model_version": 4,
   "latest_values": {
     "headline_cpi": {
@@ -29,11 +29,11 @@
     },
     "bank_rate": {
       "value": 4.0,
-      "period": "2026-11-24",
+      "period": "2026-11-25",
       "source": "Bank of England"
     },
     "swap_2y": {
-      "value": 4.67,
+      "value": 4.68,
       "period": "previous UK business-day close",
       "source": "BlueGamma public SONIA swap table"
     },
@@ -138,10 +138,10 @@
   "latest_pressure_index": 0.0357,
   "latest_forecast": {
     "6 months": {
-      "mortgage_2y_mid": 5.17,
+      "mortgage_2y_mid": 5.18,
       "mortgage_2y_range": [
-        4.87,
-        5.47
+        4.88,
+        5.48
       ],
       "mortgage_5y_mid": 5.12,
       "mortgage_5y_range": [
@@ -150,10 +150,10 @@
       ]
     },
     "12 months": {
-      "mortgage_2y_mid": 4.81,
+      "mortgage_2y_mid": 4.82,
       "mortgage_2y_range": [
-        4.46,
-        5.16
+        4.47,
+        5.17
       ],
       "mortgage_5y_mid": 4.83,
       "mortgage_5y_range": [
@@ -231,19 +231,19 @@
       },
       {
         "name": "Tracker 6m \u2192 2Y fix",
-        "lower_cost": 39693.0,
-        "base_cost": 46647.0,
-        "higher_cost": 56013.0,
+        "lower_cost": 39734.0,
+        "base_cost": 46688.0,
+        "higher_cost": 56054.0,
         "stress_range": 16320.0,
-        "difference_vs_base_lowest": 6029.0
+        "difference_vs_base_lowest": 6070.0
       },
       {
         "name": "Tracker 6m \u2192 3Y fix",
-        "lower_cost": 40824.0,
-        "base_cost": 47790.0,
-        "higher_cost": 57169.0,
-        "stress_range": 16345.0,
-        "difference_vs_base_lowest": 7172.0
+        "lower_cost": 40883.0,
+        "base_cost": 47849.0,
+        "higher_cost": 57230.0,
+        "stress_range": 16347.0,
+        "difference_vs_base_lowest": 7231.0
       },
       {
         "name": "Tracker 6m \u2192 5Y fix",
@@ -255,11 +255,11 @@
       },
       {
         "name": "Tracker 12m \u2192 2Y fix",
-        "lower_cost": 38611.0,
-        "base_cost": 45558.0,
-        "higher_cost": 54916.0,
+        "lower_cost": 38651.0,
+        "base_cost": 45598.0,
+        "higher_cost": 54956.0,
         "stress_range": 16305.0,
-        "difference_vs_base_lowest": 4940.0
+        "difference_vs_base_lowest": 4980.0
       },
       {
         "name": "Tracker 12m \u2192 3Y fix",
@@ -321,16 +321,16 @@
       {
         "wait_months": 6,
         "fix_term": "2y",
-        "model_fix_rate": 4.97,
+        "model_fix_rate": 4.98,
         "break_even_fix_rate": 5.21,
-        "headroom_pp": 0.24
+        "headroom_pp": 0.23
       },
       {
         "wait_months": 6,
         "fix_term": "3y",
-        "model_fix_rate": 4.89,
+        "model_fix_rate": 4.9,
         "break_even_fix_rate": 4.86,
-        "headroom_pp": -0.03
+        "headroom_pp": -0.04
       },
       {
         "wait_months": 6,
@@ -342,9 +342,9 @@
       {
         "wait_months": 12,
         "fix_term": "2y",
-        "model_fix_rate": 4.61,
+        "model_fix_rate": 4.62,
         "break_even_fix_rate": 5.13,
-        "headroom_pp": 0.52
+        "headroom_pp": 0.51
       },
       {
         "wait_months": 12,
