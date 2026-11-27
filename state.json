@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-11-26T18:25:38.469044+00:00",
+  "last_checked": "2026-11-27T01:47:02.616057+00:00",
   "model_version": 4,
   "latest_values": {
     "headline_cpi": {
@@ -29,11 +29,11 @@
     },
     "bank_rate": {
       "value": 4.0,
-      "period": "2026-11-26",
+      "period": "2026-11-27",
       "source": "Bank of England"
     },
     "swap_2y": {
-      "value": 4.59,
+      "value": 4.58,
       "period": "previous UK business-day close",
       "source": "BlueGamma public SONIA swap table"
     },
@@ -102,9 +102,9 @@
     "period": "updated daily",
     "source": "Which? tables using Moneyfacts data",
     "fixed_3y": {
-      "lender": "Yorkshire Building Society",
+      "lender": "RECOMMENDED PROVIDER First Direct",
       "rate": 4.92,
-      "fee": 1495.0,
+      "fee": 490.0,
       "source": "Which? / Moneyfacts daily remortgage table"
     },
     "fixed_10y": {
@@ -150,10 +150,10 @@
       ]
     },
     "12 months": {
-      "mortgage_2y_mid": 4.77,
+      "mortgage_2y_mid": 4.76,
       "mortgage_2y_range": [
-        4.42,
-        5.12
+        4.41,
+        5.11
       ],
       "mortgage_5y_mid": 4.78,
       "mortgage_5y_range": [
@@ -162,10 +162,10 @@
       ]
     },
     "2 years": {
-      "mortgage_2y_mid": 4.31,
+      "mortgage_2y_mid": 4.3,
       "mortgage_2y_range": [
-        3.86,
-        4.76
+        3.85,
+        4.75
       ],
       "mortgage_5y_mid": 4.4,
       "mortgage_5y_range": [
@@ -191,11 +191,11 @@
       },
       {
         "name": "3Y fix now \u2192 refinance",
-        "lower_cost": 43585.0,
-        "base_cost": 46341.0,
-        "higher_cost": 50034.0,
+        "lower_cost": 42543.0,
+        "base_cost": 45299.0,
+        "higher_cost": 48992.0,
         "stress_range": 6449.0,
-        "difference_vs_base_lowest": 6027.0
+        "difference_vs_base_lowest": 4985.0
       },
       {
         "name": "2Y fix now \u2192 refinance",
@@ -215,11 +215,11 @@
       },
       {
         "name": "Tracker 3m \u2192 3Y fix",
-        "lower_cost": 39472.0,
-        "base_cost": 46491.0,
-        "higher_cost": 55945.0,
-        "stress_range": 16473.0,
-        "difference_vs_base_lowest": 6177.0
+        "lower_cost": 39441.0,
+        "base_cost": 46459.0,
+        "higher_cost": 55913.0,
+        "stress_range": 16472.0,
+        "difference_vs_base_lowest": 6145.0
       },
       {
         "name": "Tracker 3m \u2192 5Y fix",
@@ -239,11 +239,11 @@
       },
       {
         "name": "Tracker 6m \u2192 3Y fix",
-        "lower_cost": 39845.0,
-        "base_cost": 46802.0,
-        "higher_cost": 56172.0,
-        "stress_range": 16327.0,
-        "difference_vs_base_lowest": 6488.0
+        "lower_cost": 39818.0,
+        "base_cost": 46775.0,
+        "higher_cost": 56144.0,
+        "stress_range": 16326.0,
+        "difference_vs_base_lowest": 6461.0
       },
       {
         "name": "Tracker 6m \u2192 5Y fix",
@@ -255,19 +255,19 @@
       },
       {
         "name": "Tracker 12m \u2192 2Y fix",
-        "lower_cost": 37864.0,
-        "base_cost": 44804.0,
-        "higher_cost": 54153.0,
-        "stress_range": 16289.0,
-        "difference_vs_base_lowest": 4490.0
+        "lower_cost": 37789.0,
+        "base_cost": 44727.0,
+        "higher_cost": 54076.0,
+        "stress_range": 16287.0,
+        "difference_vs_base_lowest": 4413.0
       },
       {
         "name": "Tracker 12m \u2192 3Y fix",
-        "lower_cost": 38312.0,
-        "base_cost": 45257.0,
-        "higher_cost": 54613.0,
-        "stress_range": 16301.0,
-        "difference_vs_base_lowest": 4943.0
+        "lower_cost": 38236.0,
+        "base_cost": 45180.0,
+        "higher_cost": 54535.0,
+        "stress_range": 16299.0,
+        "difference_vs_base_lowest": 4866.0
       },
       {
         "name": "Tracker 12m \u2192 5Y fix",
@@ -342,16 +342,16 @@
       {
         "wait_months": 12,
         "fix_term": "2y",
-        "model_fix_rate": 4.52,
-        "break_even_fix_rate": 5.23,
-        "headroom_pp": 0.71
+        "model_fix_rate": 4.51,
+        "break_even_fix_rate": 5.24,
+        "headroom_pp": 0.73
       },
       {
         "wait_months": 12,
         "fix_term": "3y",
-        "model_fix_rate": 4.45,
-        "break_even_fix_rate": 4.85,
-        "headroom_pp": 0.4
+        "model_fix_rate": 4.44,
+        "break_even_fix_rate": 4.86,
+        "headroom_pp": 0.42
       },
       {
         "wait_months": 12,
